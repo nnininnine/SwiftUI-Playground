@@ -17,6 +17,7 @@ struct TextFieldView: View {
   var body: some View {
     ScrollView {
       VStack(spacing: 20) {
+        Spacer()
         // MARK: Basic TextField
 
         TextField(text: $text) {
@@ -27,8 +28,18 @@ struct TextFieldView: View {
 
         TextField("Rounded border TextField", text: $text)
           .textFieldStyle(.roundedBorder)
-        
+
         // MARK: Custom TextField
+
+        TextField("Custome Style TextField", text: $text)
+          .padding()
+          .border(.pink)
+        
+        //MARK: Custom Rounded border TextField
+        
+        TextField("Custom Style Rounded border TextField", text: $text)
+          .padding()
+          .overlay(RoundedRectangle(cornerRadius: 12).strokeBorder(.yellow))
       }
     }
     .padding(.horizontal)
