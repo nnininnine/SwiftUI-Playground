@@ -11,6 +11,7 @@ class HomeViewModel: ObservableObject {
   // MARK: Properties
 
   let modules: Modules = [
-    Module(name: "TextField", view: AnyView(TextFieldView()))
+    Module(name: "TextField", view: AnyView(TextFieldView())),
+    Module(name: "Button", view: AnyView(ButtonView()))
   ]
 }
