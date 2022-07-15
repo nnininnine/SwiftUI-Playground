@@ -13,6 +13,7 @@
 		698C15AA288143E40014C394 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698C15A9288143E40014C394 /* Preview Assets.xcassets */; };
 		698C15B5288148780014C394 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C15B4288148780014C394 /* HomeViewModel.swift */; };
 		698C15B8288148D70014C394 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C15B7288148D70014C394 /* Module.swift */; };
+		698C15BE288149E20014C394 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C15BD288149E20014C394 /* TextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		698C15A9288143E40014C394 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		698C15B4288148780014C394 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		698C15B7288148D70014C394 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		698C15BD288149E20014C394 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		698C15B0288143F30014C394 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				698C15B9288149B70014C394 /* TextField */,
 				698C15B1288143FA0014C394 /* Home */,
 			);
 			path = Screens;
@@ -111,6 +114,22 @@
 				698C15B7288148D70014C394 /* Module.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		698C15B9288149B70014C394 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				698C15BA288149C70014C394 /* View */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		698C15BA288149C70014C394 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				698C15BD288149E20014C394 /* TextFieldView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				698C15A5288143E30014C394 /* HomeView.swift in Sources */,
+				698C15BE288149E20014C394 /* TextFieldView.swift in Sources */,
 				698C15B8288148D70014C394 /* Module.swift in Sources */,
 				698C15B5288148780014C394 /* HomeViewModel.swift in Sources */,
 				698C15A3288143E30014C394 /* SwiftUI_PlaygroundApp.swift in Sources */,
