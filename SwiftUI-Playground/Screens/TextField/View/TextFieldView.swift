@@ -8,12 +8,21 @@
 import SwiftUI
 
 struct TextFieldView: View {
+  // MARK: Properties
+
+  @State private var text: String = ""
+
   // MARK: Body
 
   var body: some View {
     ScrollView {
       // MARK: Basic TextField
+
+      TextField(text: $text) {
+        Text("Basic TextField")
+      }
     }
+    .padding()
     .navigationTitle("TextField")
     .navigationBarTitleDisplayMode(.inline)
   }
