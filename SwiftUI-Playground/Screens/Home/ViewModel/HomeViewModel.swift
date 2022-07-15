@@ -5,10 +5,12 @@
 //  Created by 7Peaks on 15/7/2565 BE.
 //
 
-import Combine
+import SwiftUI
 
 class HomeViewModel: ObservableObject {
   // MARK: Properties
 
-  let modules: Modules = .init()
+  let modules: Modules = [
+    Module(name: "TextField", view: AnyView(TextFieldView()))
+  ]
 }
