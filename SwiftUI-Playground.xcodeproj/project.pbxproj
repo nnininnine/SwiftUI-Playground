@@ -11,6 +11,8 @@
 		698C15A5288143E30014C394 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C15A4288143E30014C394 /* HomeView.swift */; };
 		698C15A7288143E40014C394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698C15A6288143E40014C394 /* Assets.xcassets */; };
 		698C15AA288143E40014C394 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698C15A9288143E40014C394 /* Preview Assets.xcassets */; };
+		698C15B5288148780014C394 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C15B4288148780014C394 /* HomeViewModel.swift */; };
+		698C15B8288148D70014C394 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C15B7288148D70014C394 /* Module.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		698C15A4288143E30014C394 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		698C15A6288143E40014C394 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		698C15A9288143E40014C394 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		698C15B4288148780014C394 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		698C15B7288148D70014C394 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 		698C15B1288143FA0014C394 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				698C15B6288148C70014C394 /* Model */,
+				698C15B3288148660014C394 /* ViewModel */,
 				698C15B2288143FF0014C394 /* View */,
 			);
 			path = Home;
@@ -89,6 +95,22 @@
 				698C15A4288143E30014C394 /* HomeView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		698C15B3288148660014C394 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				698C15B4288148780014C394 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		698C15B6288148C70014C394 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				698C15B7288148D70014C394 /* Module.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +184,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				698C15A5288143E30014C394 /* HomeView.swift in Sources */,
+				698C15B8288148D70014C394 /* Module.swift in Sources */,
+				698C15B5288148780014C394 /* HomeViewModel.swift in Sources */,
 				698C15A3288143E30014C394 /* SwiftUI_PlaygroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
