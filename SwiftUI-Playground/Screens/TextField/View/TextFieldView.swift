@@ -16,16 +16,20 @@ struct TextFieldView: View {
 
   var body: some View {
     ScrollView {
-      // MARK: Basic TextField
+      VStack(spacing: 20) {
+        // MARK: Basic TextField
 
-      TextField(text: $text) {
-        Text("Basic TextField")
+        TextField(text: $text) {
+          Text("Basic TextField")
+        }
+
+        // MARK: Rounded border TextField
+
+        TextField("Rounded border TextField", text: $text)
+          .textFieldStyle(.roundedBorder)
+        
+        // MARK: Custom TextField
       }
-
-      // MARK: Rounded border TextField
-
-      TextField("Rounded border TextField", text: $text)
-        .textFieldStyle(.roundedBorder)
     }
     .padding(.horizontal)
     .navigationTitle("TextField")
