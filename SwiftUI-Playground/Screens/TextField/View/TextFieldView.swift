@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct TextFieldView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  // MARK: Body
+
+  var body: some View {
+    ScrollView {
+      // MARK: Basic TextField
     }
+    .navigationTitle("TextField")
+    .navigationBarTitleDisplayMode(.inline)
+  }
 }
 
 struct TextFieldView_Previews: PreviewProvider {
-    static var previews: some View {
-        TextFieldView()
-    }
+  static var previews: some View {
+    TextFieldView()
+  }
 }
