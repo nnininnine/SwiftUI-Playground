@@ -21,7 +21,7 @@ struct HomeView: View {
           NavigationLink(module.name, destination: module.view)
         }
       }
-      .navigationTitle("SwiftUI")
+      .navigationTitle("SwiftUI-Playground")
     }
     .navigationViewStyle(.stack)
   }
