@@ -21,8 +21,13 @@ struct TextFieldView: View {
       TextField(text: $text) {
         Text("Basic TextField")
       }
+
+      // MARK: Rounded border TextField
+
+      TextField("Rounded border TextField", text: $text)
+        .textFieldStyle(.roundedBorder)
     }
-    .padding()
+    .padding(.horizontal)
     .navigationTitle("TextField")
     .navigationBarTitleDisplayMode(.inline)
   }
