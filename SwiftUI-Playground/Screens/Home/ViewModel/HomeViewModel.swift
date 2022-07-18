@@ -12,6 +12,7 @@ class HomeViewModel: ObservableObject {
 
   let modules: Modules = [
     Module(name: "TextField", view: AnyView(TextFieldView())),
-    Module(name: "Button", view: AnyView(ButtonView()))
+    Module(name: "Button", view: AnyView(ButtonView())),
+    Module(name: "Form & Section", view: AnyView(FormSectionView()))
   ]
 }
