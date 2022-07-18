@@ -10,7 +10,11 @@ import SwiftUI
 struct FormSectionView: View {
   // MARK: Properties
 
+  // toggle
   @State private var toggle: Bool = false
+  // picker
+  let pickerList = ["picker 00", "picker 01", "picker 02", "picker 03"]
+  @State private var selectedMode = 0
 
   // MARK: Body
 
@@ -28,10 +32,18 @@ struct FormSectionView: View {
           Spacer()
           Text("Value")
         }
+
+        Picker(selection: $selectedMode, label: Text("Picker")) {
+          ForEach(0 ..< pickerList.count, id: \.self) {
+            Text(self.pickerList[$0])
+          }
+        }
+        .onChange(of: selectedMode, perform: { value in
+          print(value)
+        })
       }
     }
     .navigationTitle("Form & Section")
-    .navigationBarTitleDisplayMode(.inline)
   }
 }
 
