@@ -23,6 +23,7 @@ struct TextFieldView: View {
 
         TextField("Basic TextField", text: $text)
           .textFieldStyle(.automatic)
+
         // MARK: Rounded border TextField
 
         TextField("Rounded border TextField", text: $text)
@@ -39,12 +40,27 @@ struct TextFieldView: View {
         TextField("Custom Style Rounded border TextField", text: $text)
           .padding()
           .overlay(RoundedRectangle(cornerRadius: 12).strokeBorder(.yellow))
-        
+
         // MARK: Custom Capsule border TextField
-        
+
         TextField("Custom Style Capsule border textField", text: $text)
           .padding()
           .overlay(Capsule().strokeBorder(.blue))
+
+        // MARK: TextField with vertical Title
+
+        VStack(alignment: .leading, spacing: 6) {
+          Text("Title")
+          TextField("TextField with vertical Title", text: $text)
+            .textFieldStyle(.roundedBorder)
+        }
+        
+        //MARK: TextField with horizontal Title
+        HStack(alignment: .center) {
+          Text("Title")
+          TextField("TextField with horizontal Title", text: $text)
+            .textFieldStyle(.roundedBorder)
+        }
       }
     }
     .padding(.horizontal)
