@@ -11,7 +11,7 @@ struct FormSectionView: View {
   // MARK: Properties
 
   @State private var toggle: Bool = false
-  
+
   // MARK: Body
 
   var body: some View {
@@ -20,6 +20,13 @@ struct FormSectionView: View {
         Text("Normal Text")
         HStack {
           Toggle("Toggle Text", isOn: $toggle)
+        }
+      }
+      Section("Section 02") {
+        HStack {
+          Text("Title")
+          Spacer()
+          Text("Value")
         }
       }
     }
