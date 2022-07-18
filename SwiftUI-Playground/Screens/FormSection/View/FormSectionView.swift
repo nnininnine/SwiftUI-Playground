@@ -41,6 +41,12 @@ struct FormSectionView: View {
         .onChange(of: selectedMode, perform: { value in
           print(value)
         })
+        
+        Button {
+          print("on tap button")
+        } label: {
+          Text("Button")
+        }
       }
     }
     .navigationTitle("Form & Section")
