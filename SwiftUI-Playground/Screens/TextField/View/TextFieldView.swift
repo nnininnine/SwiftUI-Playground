@@ -11,6 +11,7 @@ struct TextFieldView: View {
   // MARK: Properties
 
   @State private var text: String = ""
+  @State private var numText: String = ""
 
   // MARK: Body
 
@@ -54,13 +55,20 @@ struct TextFieldView: View {
           TextField("TextField with vertical Title", text: $text)
             .textFieldStyle(.roundedBorder)
         }
-        
-        //MARK: TextField with horizontal Title
+
+        // MARK: TextField with horizontal Title
+
         HStack(alignment: .center) {
           Text("Title")
           TextField("TextField with horizontal Title", text: $text)
             .textFieldStyle(.roundedBorder)
         }
+
+        // MARK: Numeric TextField
+
+        TextField("Numeric TextField", text: $numText)
+          .textFieldStyle(.roundedBorder)
+          .keyboardType(.numberPad)
       }
     }
     .padding(.horizontal)
