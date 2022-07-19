@@ -12,37 +12,60 @@ struct ShapeView: View {
     ScrollView {
       // MARK: Circle
 
-      Text("Circle")
-        .font(.title2)
-      Circle()
-        .fill(.red)
-        .frame(width: 100, height: 100)
-      Circle()
-        .strokeBorder(Color(uiColor: .label), style: .init(lineWidth: 6))
-        .frame(width: 100, height: 100)
-      Circle()
-        .strokeBorder(Color(uiColor: .label), style: .init(lineWidth: 6))
-        .background(Circle().fill(.red))
-        .frame(width: 100, height: 100)
+      Group {
+        Text("Circle")
+          .font(.title2)
+        Circle()
+          .fill(.red)
+          .frame(width: 100, height: 100)
+        Circle()
+          .strokeBorder(Color(uiColor: .label), style: .init(lineWidth: 6))
+          .frame(width: 100, height: 100)
+        Circle()
+          .strokeBorder(Color(uiColor: .label), style: .init(lineWidth: 6))
+          .background(Circle().fill(.red))
+          .frame(width: 100, height: 100)
 
-      Divider()
+        Divider()
+      }
 
       // MARK: Ellipse
 
-      Text("Ellipse")
-        .font(.title2)
-      Ellipse()
-        .fill(.yellow)
-        .frame(width: 200, height: 100)
-      Ellipse()
-        .strokeBorder(.blue, style: .init(lineWidth: 6))
-        .frame(width: 200, height: 100)
-      Ellipse()
-        .strokeBorder(.blue, style: .init(lineWidth: 6))
-        .background(Ellipse().fill(.yellow))
-        .frame(width: 200, height: 100)
+      Group {
+        Text("Ellipse")
+          .font(.title2)
+        Ellipse()
+          .fill(.yellow)
+          .frame(width: 200, height: 100)
+        Ellipse()
+          .strokeBorder(.blue, style: .init(lineWidth: 6))
+          .frame(width: 200, height: 100)
+        Ellipse()
+          .strokeBorder(.blue, style: .init(lineWidth: 6))
+          .background(Ellipse().fill(.yellow))
+          .frame(width: 200, height: 100)
 
-      Divider()
+        Divider()
+      }
+
+      // MARK: Rectangle
+
+      Group {
+        Text("Rectangle")
+          .font(.title2)
+        Rectangle()
+          .fill(.indigo)
+          .frame(width: 200, height: 100)
+        Rectangle()
+          .strokeBorder(.green, style: .init(lineWidth: 6))
+          .frame(width: 200, height: 100)
+        Rectangle()
+          .strokeBorder(.green, style: .init(lineWidth: 6))
+          .background(Rectangle().fill(.indigo))
+          .frame(width: 200, height: 100)
+
+        Divider()
+      }
     }
     .padding(.horizontal)
     .frame(width: UIScreen.main.bounds.width)
