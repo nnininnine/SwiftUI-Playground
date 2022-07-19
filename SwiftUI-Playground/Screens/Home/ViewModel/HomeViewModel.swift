@@ -14,6 +14,7 @@ class HomeViewModel: ObservableObject {
     Module(name: "TextField", view: AnyView(TextFieldView())),
     Module(name: "Button", view: AnyView(ButtonView())),
     Module(name: "Form & Section", view: AnyView(FormSectionView())),
-    Module(name: "Sidebar", view: AnyView(SidebarView()))
+    Module(name: "Sidebar", view: AnyView(SidebarView())),
+    Module(name: "Shape", view: AnyView(ShapeView()))
   ]
 }
