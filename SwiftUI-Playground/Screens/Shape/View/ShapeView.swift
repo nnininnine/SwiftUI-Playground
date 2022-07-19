@@ -82,6 +82,25 @@ struct ShapeView: View {
           .strokeBorder(.orange, style: .init(lineWidth: 6))
           .background(RoundedRectangle(cornerRadius: 12).fill(.mint))
           .frame(width: 200, height: 100)
+
+        Divider()
+      }
+
+      // MARK: Capsule
+
+      Group {
+        Text("Capsule")
+          .font(.title2)
+        Capsule()
+          .fill(.ultraThinMaterial)
+          .frame(width: 200, height: 80)
+        Capsule()
+          .strokeBorder(Color(uiColor: .label), style: .init(lineWidth: 6))
+          .frame(width: 200, height: 80)
+        Capsule()
+          .strokeBorder(Color(uiColor: .label), style: .init(lineWidth: 6))
+          .background(Capsule().fill(.ultraThinMaterial))
+          .frame(width: 200, height: 80)
       }
     }
     .padding(.horizontal)
