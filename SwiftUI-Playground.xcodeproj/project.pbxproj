@@ -11,6 +11,7 @@
 		69591BF42886608E00B026BF /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69591BF32886608E00B026BF /* SidebarView.swift */; };
 		69591BF7288665C500B026BF /* SidebarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69591BF6288665C500B026BF /* SidebarViewModel.swift */; };
 		69591BF92886663F00B026BF /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69591BF82886663F00B026BF /* ExampleView.swift */; };
+		69591BFD28866F5600B026BF /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69591BFC28866F5600B026BF /* ShapeView.swift */; };
 		698C15A3288143E30014C394 /* SwiftUI_PlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C15A2288143E30014C394 /* SwiftUI_PlaygroundApp.swift */; };
 		698C15A5288143E30014C394 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C15A4288143E30014C394 /* HomeView.swift */; };
 		698C15A7288143E40014C394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 698C15A6288143E40014C394 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		69591BF32886608E00B026BF /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		69591BF6288665C500B026BF /* SidebarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewModel.swift; sourceTree = "<group>"; };
 		69591BF82886663F00B026BF /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		69591BFC28866F5600B026BF /* ShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
 		698C159F288143E30014C394 /* SwiftUI-Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		698C15A2288143E30014C394 /* SwiftUI_PlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_PlaygroundApp.swift; sourceTree = "<group>"; };
 		698C15A4288143E30014C394 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,22 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		69591BFA28866F3400B026BF /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				69591BFB28866F4400B026BF /* View */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
+		69591BFB28866F4400B026BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69591BFC28866F5600B026BF /* ShapeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		698C1596288143E30014C394 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +154,7 @@
 		698C15B0288143F30014C394 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				69591BFA28866F3400B026BF /* Shape */,
 				69591BF02886605600B026BF /* Sidebar */,
 				1E1FDB17288534D4001B0FA7 /* FormSection */,
 				698C15C4288172670014C394 /* Button */,
@@ -286,6 +305,7 @@
 				698C15BE288149E20014C394 /* TextFieldView.swift in Sources */,
 				1E1FDB1A2885355C001B0FA7 /* FormSectionView.swift in Sources */,
 				698C15C7288172830014C394 /* ButtonView.swift in Sources */,
+				69591BFD28866F5600B026BF /* ShapeView.swift in Sources */,
 				698C15B8288148D70014C394 /* Module.swift in Sources */,
 				69591BF7288665C500B026BF /* SidebarViewModel.swift in Sources */,
 				698C15B5288148780014C394 /* HomeViewModel.swift in Sources */,
