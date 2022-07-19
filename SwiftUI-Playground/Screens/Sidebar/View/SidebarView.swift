@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct SidebarView: View {
-    var body: some View {
-        Text("SidebarView")
+  var body: some View {
+    NavigationView {
+      List {
+        Text("Example 01")
+        Text("Example 02")
+      }
+      .navigationTitle("Example Sidebar")
     }
+      .navigationTitle("Sidebar")
+      .navigationBarTitleDisplayMode(.inline)
+  }
 }
 
 struct SidebarView_Previews: PreviewProvider {
-    static var previews: some View {
-        SidebarView()
-    }
+  static var previews: some View {
+    SidebarView()
+  }
 }
