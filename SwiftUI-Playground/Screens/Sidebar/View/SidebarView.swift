@@ -8,16 +8,24 @@
 import SwiftUI
 
 struct SidebarView: View {
+  // MARK: Properties
+
+  @StateObject private var vm: SidebarViewModel = .init()
+
+  // MARK: Body
+
   var body: some View {
     NavigationView {
       List {
-        Text("Example 01")
-        Text("Example 02")
+        ForEach(vm.modules, id: \.name) {
+          NavigationLink($0.name, destination: $0.view)
+        }
       }
+      .listStyle(.insetGrouped)
       .navigationTitle("Example Sidebar")
+
+      ExampleView(text: "Initial View")
     }
-      .navigationTitle("Sidebar")
-      .navigationBarTitleDisplayMode(.inline)
   }
 }
 
