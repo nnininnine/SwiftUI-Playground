@@ -18,10 +18,10 @@ struct ShapeView: View {
         .fill(.red)
         .frame(width: 100, height: 100)
       Circle()
-        .strokeBorder(.black, style: .init(lineWidth: 6))
+        .strokeBorder(Color(uiColor: .label), style: .init(lineWidth: 6))
         .frame(width: 100, height: 100)
       Circle()
-        .strokeBorder(.black, style: .init(lineWidth: 6))
+        .strokeBorder(Color(uiColor: .label), style: .init(lineWidth: 6))
         .background(Circle().fill(.red))
         .frame(width: 100, height: 100)
 
