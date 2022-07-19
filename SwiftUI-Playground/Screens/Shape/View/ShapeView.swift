@@ -66,6 +66,23 @@ struct ShapeView: View {
 
         Divider()
       }
+
+      // MARK: Rounded Rectangle
+
+      Group {
+        Text("Rounded Rectangle")
+          .font(.title2)
+        RoundedRectangle(cornerRadius: 12)
+          .fill(.mint)
+          .frame(width: 200, height: 100)
+        RoundedRectangle(cornerRadius: 12)
+          .strokeBorder(.orange, style: .init(lineWidth: 6))
+          .frame(width: 200, height: 100)
+        RoundedRectangle(cornerRadius: 12)
+          .strokeBorder(.orange, style: .init(lineWidth: 6))
+          .background(RoundedRectangle(cornerRadius: 12).fill(.mint))
+          .frame(width: 200, height: 100)
+      }
     }
     .padding(.horizontal)
     .frame(width: UIScreen.main.bounds.width)
